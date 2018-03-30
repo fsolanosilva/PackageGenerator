@@ -13,9 +13,9 @@ namespace ConsoleApp1
         {
         }
 
-        public Dictionary<int,int> RetornaPacotes(int pacote, int numTotalRegistros)
+        public async Task<Dictionary<int,int>> RetornaPacotes(int pacote, int numTotalRegistros)
         {
-            return new RetornaPacotes().PackageGenerator(pacote, numTotalRegistros);
+            return await new RetornaPacotes().PackageGenerator(pacote, numTotalRegistros);
         }
     }
 }
